@@ -1,26 +1,28 @@
 {
-    "name": "myweb",
-    "version": "1.0.0",
-    "description": "first study git and react",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://zjutcook@github.com/zjutcook/myweb.git"
-    },
-    "keywords": [
-        "myweb"
-    ],
-    "author": "zjutcook",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/zjutcook/myweb/issues"
-    },
-    "homepage": "https://github.com/zjutcook/myweb#readme",
-    "dependencies": {
-        "react": "^15.0.2",
-        "react-dom": "^15.0.2"
-    }
+  "name": "myweb",
+  "version": "1.0.0",
+  "description": "first study git and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://zjutcook@github.com/zjutcook/myweb.git"
+  },
+  "keywords": [
+    "myweb"
+  ],
+  "author": "zjutcook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zjutcook/myweb/issues"
+  },
+  "homepage": "https://github.com/zjutcook/myweb#readme",
+  "dependencies": {
+    "marked": "^0.3.5",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "zepto": "^1.0.1"
+  }
 }

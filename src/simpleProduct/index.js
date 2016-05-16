@@ -32,15 +32,15 @@ var ProductTable = React.createClass({
             lastCategory = product.category;
         });
         return (
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>{rows}</tbody>
-        </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>{rows}</tbody>
+            </table>
         );
     }
 });

@@ -32,15 +32,15 @@ var ProductTable = React.createClass({displayName: "ProductTable",
             lastCategory = product.category;
         });
         return (
-        React.createElement("table", null, 
-            React.createElement("thead", null, 
-                React.createElement("tr", null, 
-                    React.createElement("th", null, "Name"), 
-                    React.createElement("th", null, "Price")
-                )
-            ), 
-            React.createElement("tbody", null, rows)
-        )
+            React.createElement("table", null, 
+                React.createElement("thead", null, 
+                    React.createElement("tr", null, 
+                        React.createElement("th", null, "Name"), 
+                        React.createElement("th", null, "Price")
+                    )
+                ), 
+                React.createElement("tbody", null, rows)
+            )
         );
     }
 });

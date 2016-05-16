@@ -162,33 +162,6 @@ JsonCtrl.prototype.saveFile = function(data) {
     var str = JSON.stringify(data);
     str = '{"comments": ' + str + ', "msg": "成功", "responseCode": 0}';
 
-    var fso, tf;
-    try {
-        fso = new ActiveXObject("Scripting.FileSystemObject");
-        tf = fso.CreateTextFile("\/myweb\/data\/commentBox.json", true);
-        tf.WriteLine(str);
-    }
-    catch (err) {
-        console.log(err);
-    }
-    finally {
-        tf.Close();
-    }
+    // 保存至localStorage
+    // localStorage.setItem("react_comments_key", str);
 };
-JsonCtrl.prototype.readFile = function() {
-    var fso, ts, s;
-    var ForReading = 1;
-    try{
-        fso = new ActiveXObject("Scripting.FileSystemObject");
-        ts = fso.OpenTextFile("/myweb/data/commentBox.json", ForReading);
-        s = ts.ReadLine();
-        console.log(s);
-        // var json = eval('(' + s + ')');
-    }
-    catch(err){
-        console.log(err);
-    }finally{
-        ts.Close();
-    }
-};
-new JsonCtrl().readFile();
